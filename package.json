@@ -1,0 +1,21 @@
+{
+  "name": "delivery-app-mobile-backend",
+  "version": "1.0.0",
+  "description": "delivery-app-mobile-backend",
+  "main": "server.js",
+  "author": "Sebastian Chaquila",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "debug": "DEBUG=express:* nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.7.0"
+  }
+}
