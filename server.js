@@ -24,8 +24,8 @@ app.set('port', port);
 userRoutes(app);
 
 //ROUTES INITIAL
-app.get('/', (req, res) => {
-    res.send('Hola Mundo');
+app.get('/api', (req, res) => {
+    res.send('API REST - NODEJS');
 });
 
 //LOGS
@@ -35,6 +35,6 @@ app.use((err, res, req, next) => {
 });
 
 //LISTEN PORT
-server.listen(port, '192.168.100.152' || 'localhost', function () {
+server.listen(port, '192.168.100.152',  'localhost', function () {
     console.log('Aplicacion en NodeJS ', port, ' iniciando');
 });

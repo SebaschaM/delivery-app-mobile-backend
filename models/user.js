@@ -15,7 +15,7 @@ User.create = (user, result) => {
                 return;
             } else {
                 console.log('Id del nuevo usuario', res.insertId);
-                result(null, res.insertId);
+                result(null, res.insertId); 
             }
         });
 }
